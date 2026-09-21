@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color1: rgb(3, 148, 252);
+    --color2: rgb(136, 3, 252);
+    --color3: rgb(194, 3, 252);
+    --secondarycolor: linear-gradient(to right, rgb(3, 148, 252), rgb(136, 3, 252), rgb(194, 3, 252));
+    --primarycolor: gray;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    justify-content: space-between;
+
+    ul{
+        list-style: none;
+    }
+
+    #logocontianer{
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    h1, h2{
+        background: var(--secondarycolor);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
+        
+    }
+    nav{
+        width: 60%;
+        height: auto;
+        color: var(--primarycolor);    
+    }
+    #pagenav{
+        display: flex;
+        justify-content: space-evenly;
+        width: 70%;
+        height: 100%;
+        align-items: center;
+    }
+    
+}
