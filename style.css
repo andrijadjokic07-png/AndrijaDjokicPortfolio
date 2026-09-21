@@ -8,7 +8,14 @@
     --primarycolor: gray;
     --color1: rgb(35, 48, 167);
     --secondarysecondcolor: linear-gradient(to bottom, rgb(252, 3, 219), rgb(136, 3, 252), rgb(3, 148, 252));
+    --color2: rgb(136, 3, 252);
+    --color3: rgb(252, 3, 219);
+}
 
+body{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -109,5 +116,22 @@ main{
         border-radius: 50%;
         background: var(--secondarysecondcolor) padding-box,
         var(--secondarysecondcolor) border-box;
+    }
+}
+footer{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    #footername{
+        color: var(--color2);
+    }
+    .footersignature{
+        color: var(--color3);
     }
 }
