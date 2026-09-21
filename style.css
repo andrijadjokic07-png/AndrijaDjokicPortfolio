@@ -41,7 +41,8 @@ header{
     nav{
         width: 60%;
         height: auto;
-        color: var(--primarycolor);    
+        color: var(--primarycolor);  
+        display: flex;  
     }
     #pagenav{
         display: flex;
@@ -49,6 +50,25 @@ header{
         width: 70%;
         height: 100%;
         align-items: center;
+    }
+    #appnav{
+        width: 20%;
+        height: 100%;
+    }
+
+    #appnavlist{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+    .navimages{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
     }
     
 }
