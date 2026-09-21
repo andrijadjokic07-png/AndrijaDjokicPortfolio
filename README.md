@@ -12,4 +12,4 @@ Header kommer att innehåla 2 sections, en section for "logotyp" i fall vi kan k
 
 Efter header kommer main content. Jag skulle dela up main på två sections, article och aside. Article är bara enkelt paragraph med emoji, font size och emoji. Fast aside skulle jag använda för profil bild med border color. 
 
-Footer är bara centralised paragraph med copyright.
+3. Footer är bara centralised paragraph med copyright.
