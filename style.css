@@ -16,6 +16,7 @@ body{
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
+    font-family: "Sofia", sans-serif;
 }
 
 header{
@@ -81,7 +82,7 @@ header{
 
 main{
     width: 100%;
-    height: 25rem;
+    height: 32rem;
     display: flex;
     justify-content: space-evenly;
 
@@ -133,5 +134,8 @@ footer{
     }
     .footersignature{
         color: var(--color3);
+    }
+    span{
+        padding: 0.5rem;
     }
 }
