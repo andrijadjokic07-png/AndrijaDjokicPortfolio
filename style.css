@@ -156,16 +156,15 @@ footer{
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: start;
     flex-direction: column;
 .firstsectionaboutme{
-    margin-left: 20rem;
+    margin-left: 17rem;
     width: 40%;
     height: 33%;
-    margin-top: 4rem;
-    
+    margin-top: 3rem;
+
     .aboutmetitle{
-        font-size: 3rem;
+        font-size: 42px;
         margin-bottom: 2rem;
         color: var(--thirdcolor);
     }
@@ -179,7 +178,7 @@ footer{
 }
 
     .experiencesection{
-        width: 100%;
+        width: 80%;
         height: 40%;
         padding-bottom: 1.6rem;
         border-bottom: solid 3px var(--bordercolor);
@@ -215,13 +214,13 @@ footer{
     .experienceinfochild1{
         display: flex;
         justify-content: space-between;
-        width: 40%;
+        width: 47%;
         height: 100%;
     }
     .experienceinfochild2{
         display: flex;
         justify-content: end;
-        width: 60%;
+        width: 50%;
         height: 100%;
     }
     .experienceinfoheader{
