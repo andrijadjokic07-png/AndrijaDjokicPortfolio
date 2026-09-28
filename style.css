@@ -127,7 +127,7 @@ main{
         var(--secondarysecondcolor) border-box;
     }
 }
-#fixedfooter {
+.fixedfooter {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -279,5 +279,74 @@ footer{
             margin-bottom: 1rem;
             color: var(--paragraphcolor);
         }
+    }
+}
+
+.pagetitle{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: var(--thirdcolor);
+        margin-left: 15rem;
+}
+.titleparagraph{
+    font-size: 1rem;
+        color: var(--primarycolor);
+        width: 708px;
+        height: 104px;
+        word-spacing: 2px;
+        margin-left: 15rem;
+}
+
+#projectpage{
+    width: 100%;
+    height: auto;
+    .projectpage{
+        width: 100%;
+        height: 30rem;
+        display: flex;
+        justify-content: center;
+    }
+    .projectcontainer{
+        width: 16%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 2rem 1rem 10rem 2rem rgb(189, 189, 189 , 0.7);
+        margin-left: 3rem;
+        border-radius: 25px;
+    }
+    .projectimage{
+        width: 100%;
+        height: 45%;
+    }
+    .projectinfo{
+        width: 90%;
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .projectinfotitle{
+        font-size: 1.5rem;
+        color: black;
+        margin-top: 1rem;
+    }
+    .projectinfoparagraph{
+        margin-top: 1rem;
+        width: 250px;
+        height: 80px;
+        word-spacing: 1px;
+        font-size: 1rem;
+        color: var(--paragraphcolor);
+    }
+    .projectinfotechstack{
+        font-size: 0.9rem;
+        color: blue;
+    }
+    .projectinfotechstack{
+        font-size: 0.79rem;
+        margin-top: 1.5rem;
     }
 }
