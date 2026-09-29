@@ -19,7 +19,9 @@ body{
     min-height: 100dvh;
     display: flex;
     flex-direction: column;
-    font-family: "Sofia", sans-serif;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 header{
@@ -300,11 +302,16 @@ footer{
 #projectpage{
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
     .projectpage{
         width: 100%;
         height: 30rem;
         display: flex;
         justify-content: center;
+    }
+    #secondsecion{
+        margin-top: 2rem;
     }
     .projectcontainer{
         width: 16%;
@@ -335,18 +342,47 @@ footer{
     }
     .projectinfoparagraph{
         margin-top: 1rem;
-        width: 250px;
-        height: 80px;
+        width: 264px;
+        height: 130px;
         word-spacing: 1px;
         font-size: 1rem;
         color: var(--paragraphcolor);
     }
     .projectinfotechstack{
         font-size: 0.9rem;
-        color: blue;
+        color: var(--thirdcolor);
+        margin-top: 0.2rem;
     }
     .projectinfotechstack{
-        font-size: 0.79rem;
-        margin-top: 1.5rem;
+        font-size: 0.8rem;
+    }
+    .techstackbold{
+        font-weight: 500;
+    }
+    .linkcontainer{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        margin-top: 0.5rem;
+    }
+
+    .linkone , .linktwo{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .linkone{
+        justify-content: center;
+    }
+    .projecticonimage{
+        width: 15px;
+        height: 15px;
+        margin-right: 0.6rem;
+    }
+    .icontext{
+        color: black;
+        text-decoration: underline;
+        font-size: 15px;
     }
 }
