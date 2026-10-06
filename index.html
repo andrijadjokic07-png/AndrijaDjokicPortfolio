@@ -10,18 +10,20 @@
     <title>Document</title>
 </head>
 <body>
-    <header id="Phone">
+
+    <header>
         <div id="logocontianer">
             <h1>{007}</h1>
             <h2>AndrijaDj</h2>
         </div>
-    </header>
-    <header id="Desktop">
-        <div id="logocontianer">
-            <h1>{007}</h1>
-            <h2>AndrijaDj</h2>
+
+        <div id="hamburger" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-        <nav>
+
+        <nav id="mainnav">
             <ul id="pagenav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -31,17 +33,17 @@
             </ul>
             <div id="appnav">
                 <ul id="appnavlist">
-                    <li><a href=""><img class="navimages" src="assets/githubnavicon.png" alt="github icon"></a></li>
                     <li><a href=""><img class="navimages" src="assets/twitternavicon.png" alt="twitter icon"></a></li>
                     <li><a href=""><img class="navimages" src="assets/linkedinnavicon.png" alt="linkedin icon"></a></li>
+                    <li><a href=""><img class="navimages" src="assets/githubnavicon.png" alt="github icon"></a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main id="homepage">
         <article id="whoami">
-            <h4>H1👋, </h4>
+            <h4>H1👋,</h4>
             <p>My name is</p>
             <p class="name">Andrija Djokic</p>
             <p>I build things for web</p>
@@ -50,7 +52,12 @@
             <img id="profilepicture" src="assets/linked in icon.jpg" alt="profilepicture">
         </div>
     </main>
-    <footer class="fixedfooter">Designed and built by <span id="footername"> Andrija Djokic </span> with <span class="footersignature"> Love </span> & <span class="footersignature"> Care </span> :D</footer>
-    
+
+    <footer class="fixedfooter">
+        Designed and built by <span id="footername"> Andrija Djokic </span> with
+        <span class="footersignature"> Love </span> &
+        <span class="footersignature"> Care </span> :D
+    </footer>
+
 </body>
 </html>
