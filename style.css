@@ -24,11 +24,6 @@ body{
   font-style: normal;
 }
 
-
-#Phone{
-    display: none;
-}
-
 header{
     display: flex;
     width: 100%;
