@@ -24,6 +24,11 @@ body{
   font-style: normal;
 }
 
+
+#Phone{
+    display: none;
+}
+
 header{
     display: flex;
     width: 100%;
@@ -61,6 +66,7 @@ header{
         height: auto;
         color: var(--primarycolor);  
         display: flex;  
+        align-items: center;
     }
     #pagenav{
         display: flex;
@@ -70,6 +76,8 @@ header{
         align-items: center;
     }
     #appnav{
+        display: flex;
+        align-items: center;
         width: 20%;
         height: 100%;
     }
@@ -84,8 +92,8 @@ header{
 
 
     .navimages{
-        width: 2rem;
-        height: 2rem;
+        width: 30px;
+        height: 30px;
         border-radius: 50%;
     }
 }
@@ -204,7 +212,7 @@ footer{
     }
     .experiencename{
         font-size: 1.5rem;
-        font-weight: 100;
+        font-weight: 300;
         color: var(--primarycolor);
     }
 
@@ -259,7 +267,7 @@ footer{
         height: 104px;
         word-spacing: 2px;
     }
-    #techstack{
+    .techstack{
         width: 80%;
         height: 10%;
         display: flex;
@@ -400,5 +408,15 @@ footer{
     }
     #name{
         font-size: 4rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #Desktop{
+        display: none;
+    }
+    #Phone{
+        display: flex;
     }
 }
