@@ -527,13 +527,65 @@ footer{
         }
     }
 
-    .fixedfooter{
-        height: auto;
-        font-size: 0.75rem;
-        text-align: center;
+    #aboutmepage{
+        padding-bottom: 2rem;
+
+        .firstsectionaboutme{
+            margin-left: 1.2rem;
+            margin-top: 2rem;
+            width: 90%;
+            height: auto;
+
+            .aboutmetitle{
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+            }
+            .aboutmetext{
+                font-size: 1rem;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .experiencesection{
+            width: 100%;
+            height: auto;
+        }
+        .experiencetitle{
+            width: 100%;
+            height: auto;
+            margin-bottom: 0.5rem;
+        }
+        .experiencename{
+            width: 65%;
+            font-size: 1.1rem;
+        }
+
+        .experienceinfo{
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+        }
+        .experienceinfochild1{
+            width: 100%;
+            height: auto;
+        }
+        .experienceinfochild2{
+            justify-content: flex-start;
+            width: 100%;
+            height: auto;
+            margin-top: 0.4rem;
+        }
+        .experienceinfoheader{
+            font-size: 0.8rem;
+        }
     }
 
     footer{
+        height: auto;
+        font-size: 0.75rem;
+        text-align: center;
+
         span{
             padding: 0.2rem;
         }
