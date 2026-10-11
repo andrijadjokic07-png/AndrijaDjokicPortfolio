@@ -39,9 +39,12 @@ a:focus-visible{
 
 header{
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
-    height: 10rem;
-    justify-content: space-between;
+    height: auto;
+    padding-top: 1.5rem;
+    position: relative;
 
     a{
         text-decoration: none;
@@ -53,8 +56,9 @@ header{
     }
 
     #logocontianer{
-        width: 30%;
-        height: 100%;
+        width: auto;
+        height: auto;
+        margin-left: 1.2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -69,36 +73,62 @@ header{
             font-weight: 700;
         }
         .logotitle{
-            font-size: 2rem;
+            font-size: 1.1rem;
         }
         .logosubtitle{
-            font-size: 1.5rem;
+            font-size: 0.6rem;
         }
     }
+    #hamburger{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 20px;
+        height: 14px;
+        cursor: pointer;
+        position: absolute;
+        top: 1.7rem;
+        right: 1.3rem;
+    }
+    #hamburger span{
+        width: 100%;
+        height: 2px;
+        background-color: var(--darkcolor);
+        border-radius: 2px;
+    }
     nav{
-        width: 60%;
+        width: 100%;
         height: auto;
         color: var(--textcolor);
         display: flex;
+        flex-direction: column;
         align-items: center;
+        margin-top: 0.3rem;
     }
     #pagenav{
         display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
-        width: 50%;
-        height: 100%;
+        width: 100%;
+        height: 6.25rem;
         align-items: center;
+        font-size: 0.8rem;
+    }
+    #pagenav a{
+        font-weight: 500;
+        color: var(--blackcolor);
     }
     #appnav{
         display: flex;
         align-items: center;
-        width: 20%;
-        height: 100%;
+        width: 100%;
+        height: auto;
+        margin-top: 0.75rem;
     }
 
     #appnavlist{
-        width: 70%;
-        height: 100%;
+        width: 100%;
+        height: auto;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -106,36 +136,37 @@ header{
 
 
     .navimages{
-        width: 30px;
-        height: 30px;
+        display: block;
+        width: 22px;
+        height: 22px;
         border-radius: 50%;
     }
 }
 
 main{
     width: 100%;
-    height: 32rem;
     display: flex;
-    justify-content: space-evenly;
 
     #whoami{
-        width: 30%;
-        height: 100%;
-        font-size: 3rem;
+        width: 90%;
+        height: auto;
+        margin-left: 1.2rem;
+        font-size: 1.15rem;
         display: flex;
-        justify-content: end;
         flex-direction: column;
     }
     #whoami h1{
         font-size: inherit;
-        font-weight: 400;
-        color: var(--darkbluecolor);
+        font-weight: 600;
+        line-height: 1.25;
+        color: var(--darkcolor);
     }
     #whoami h1 span{
         display: block;
+        font-size: 1.5rem;
     }
     #whoami .greeting{
-        font-weight: 700;
+        font-weight: 600;
     }
     p{
         color: var(--darkbluecolor);
@@ -148,20 +179,32 @@ main{
         color: transparent;
     }
     #profilbild{
-        width: 30%;
-        height: 105%;
+        width: 90%;
+        height: auto;
+        margin-left: 1.2rem;
+        margin-top: 0.8rem;
         display: flex;
-        justify-content: center;
-        align-items: end;
     }
     #profilepicture{
-        width: 18rem;
-        border: 8px solid transparent;
+        width: 15rem;
+        height: 15rem;
+        border: 4px solid transparent;
         border-radius: 50%;
+        object-fit: cover;
         background: var(--gradientvertical) padding-box,
         var(--gradientvertical) border-box;
     }
 }
+
+main#homepage{
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    height: auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
 .fixedfooter {
     position: fixed;
     bottom: 0;
@@ -170,10 +213,12 @@ main{
 
 footer{
     width: 100%;
-    height: 5rem;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 0.75rem;
+    text-align: center;
 
     #footername{
         color: var(--purplecolor);
@@ -182,7 +227,7 @@ footer{
         color: var(--pinkcolor);
     }
     span{
-        padding: 0.5rem;
+        padding: 0.2rem;
     }
 }
 
@@ -192,30 +237,31 @@ footer{
     height: auto;
     display: flex;
     flex-direction: column;
+    padding-bottom: 2rem;
 
     .firstsectionaboutme{
-        margin-left: 17rem;
-        width: 40%;
-        height: 33%;
-        margin-top: 3rem;
+        margin-left: 1.2rem;
+        width: 90%;
+        height: auto;
+        margin-top: 2rem;
 
         .aboutmetitle{
-            font-size: 42px;
-            margin-bottom: 2rem;
-            color: var(--headingcolor);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--blackcolor);
         }
         .aboutmetext{
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: var(--textcolor);
-            width: 708px;
-            height: 104px;
+            width: 100%;
+            height: auto;
             word-spacing: 2px;
         }
     }
 
     .experiencesection{
-        width: 80%;
-        height: 40%;
+        width: 100%;
+        height: auto;
         padding-bottom: 1.6rem;
         border-bottom: solid 3px var(--bordercolor);
     }
@@ -226,7 +272,8 @@ footer{
         display: flex;
         justify-content: space-between;
         width: 100%;
-        height: 50%;
+        height: auto;
+        margin-bottom: 0.5rem;
     }
     .experiencetype{
         width: 5.5rem;
@@ -242,30 +289,33 @@ footer{
         font-weight: 700;
     }
     .experiencename{
-        font-size: 1.5rem;
+        width: 65%;
+        font-size: 1.1rem;
         font-weight: 300;
         color: var(--textcolor);
     }
 
     .experienceinfo{
         width: 100%;
-        height: 50%;
+        height: auto;
         display: flex;
     }
     .experienceinfochild1{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
-        width: 60%;
-        height: 100%;
+        width: 100%;
+        height: auto;
     }
     .experienceinfochild2{
         display: flex;
-        justify-content: end;
-        width: 40%;
-        height: 100%;
+        justify-content: flex-end;
+        width: 100%;
+        height: auto;
+        margin-top: 0;
     }
     .experienceinfoheader{
-        font-size: 0.83rem;
+        font-size: 0.8rem;
         font-weight: 700;
         color: var(--mutedcolor);
     }
@@ -278,65 +328,79 @@ footer{
 
 #TechStack{
     width: 100%;
-    height: 50rem;
+    height: auto;
     display: flex;
     flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 
     #mytechstack{
-        width: 75%;
-        height: 20%;
+        width: 90%;
+        height: auto;
+        margin-left: 1.2rem;
         display: flex;
         flex-direction: column;
-        align-self: center;
+        align-self: flex-start;
     }
     .aboutmetitle{
-        font-size: 42px;
-        margin-bottom: 2rem;
-        color: var(--headingcolor);
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        color: var(--blackcolor);
     }
     .aboutmetext{
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: var(--textcolor);
-        width: 708px;
-        height: 104px;
+        width: 100%;
+        height: auto;
         word-spacing: 2px;
     }
     .techstack{
-        width: 80%;
-        height: 10%;
+        width: 90%;
+        height: auto;
         display: flex;
-        justify-content: space-evenly;
-        align-self: center;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-self: flex-start;
+        margin-left: 1.2rem;
+        margin-top: 1rem;
         list-style: none;
 
         .techcontainer{
-            width: 10%;
-            height: 2rem;
+            width: 25%;
+            height: auto;
+            margin-bottom: 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+        .techstackicons{
+            width: 5rem;
+            height: 5rem;
+            object-fit: contain;
+        }
         .techstacktext{
-            font-size: 0.8rem;
-            margin-bottom: 1rem;
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
             color: var(--mutedcolor);
         }
     }
 }
 
 .pagetitle{
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
-    color: var(--headingcolor);
-    margin-left: 15rem;
+    color: var(--blackcolor);
+    margin-left: 1.2rem;
 }
 .titleparagraph{
     font-size: 1rem;
     color: var(--textcolor);
-    width: 708px;
-    height: 104px;
+    width: 90%;
+    height: auto;
     word-spacing: 2px;
-    margin-left: 15rem;
+    margin-left: 1.2rem;
 }
 
 #projectpage{
@@ -344,75 +408,83 @@ footer{
     height: auto;
     display: flex;
     flex-direction: column;
+    padding-bottom: 2rem;
 
     .projectpage{
         width: 100%;
-        height: 30rem;
+        height: auto;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         list-style: none;
     }
     #secondsecion{
-        margin-top: 2rem;
+        margin-top: 0;
     }
     .projectcontainer{
-        width: 20%;
-        height: 100%;
+        width: 90%;
+        height: auto;
         background-color: var(--whitecolor);
         display: flex;
         flex-direction: column;
         align-items: center;
-        box-shadow: 2rem 1rem 10rem 2rem var(--shadowcolor);
-        margin-left: 3rem;
+        box-shadow: 0.5rem 0.5rem 2rem 0 var(--shadowcolor);
+        margin-left: 1.2rem;
+        margin-top: 1.5rem;
         border-radius: 25px;
     }
     .projectimage{
         width: 100%;
-        height: 45%;
+        height: 12rem;
+        object-fit: cover;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
     }
     .projectinfo{
         width: 90%;
-        height: 65%;
+        height: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        padding-bottom: 1.2rem;
     }
     .projectinfotitle{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         color: var(--blackcolor);
         margin-top: 1rem;
     }
     .projectinfoparagraph{
-        margin-top: 1rem;
-        width: 264px;
-        height: 130px;
+        margin-top: 0.6rem;
+        width: 100%;
+        height: auto;
         word-spacing: 1px;
-        font-size: 1rem;
+        font-size: 0.9rem;
         color: var(--mutedcolor);
     }
     .projectinfotechstack{
         font-size: 0.8rem;
         color: var(--headingcolor);
-        margin-top: 0.2rem;
+        margin-top: 0.6rem;
     }
     .techstackbold{
         font-weight: 500;
     }
     .linkcontainer{
         width: 100%;
-        height: 10%;
+        height: auto;
         display: flex;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
     }
 
     .linkone , .linktwo{
         width: 50%;
-        height: 100%;
+        height: auto;
         display: flex;
         align-items: center;
     }
-    .linkone{
-        justify-content: center;
+    .linktwo{
+        justify-content: end;
     }
     .projecticonimage{
         width: 15px;
@@ -433,341 +505,327 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2rem;
 
     #contactheader{
-        font-size: 4rem;
+        font-size: 1rem;
         color: var(--darkpurplecolor);
     }
     #name{
-        font-size: 4rem;
+        font-size: 1rem;
         font-weight: 700;
     }
     #phonenummber{
-        display: none;
+        display: block;
+        font-size: 1rem;
         font-weight: 700;
     }
     #or{
-        display: none;
+        display: block;
+        font-size: 0.9rem;
+        color: var(--textcolor);
     }
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 769px) {
 
     header{
-        height: auto;
-        flex-direction: column;
-        align-items: flex-start;
-        padding-top: 1.5rem;
-        position: relative;
+        flex-direction: row;
+        align-items: normal;
+        justify-content: space-between;
+        height: 10rem;
+        padding-top: 0;
+        position: static;
 
         #logocontianer{
-            width: auto;
-            height: auto;
-            margin-left: 1.2rem;
-            justify-content: center;
-            align-items: center;
+            width: 30%;
+            height: 100%;
+            margin-left: 0;
 
             .logotitle{
-                font-size: 1.1rem;
+                font-size: 2rem;
             }
             .logosubtitle{
-                font-size: 0.6rem;
+                font-size: 1.5rem;
             }
         }
-
         #hamburger{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 20px;
-            height: 14px;
-            cursor: pointer;
-            position: absolute;
-            top: 1.7rem;
-            right: 1.3rem;
+            display: none;
         }
-        #hamburger span{
-            width: 100%;
-            height: 2px;
-            background-color: var(--darkcolor);
-            border-radius: 2px;
-        }
-
         nav{
-            width: 100%;
-            height: auto;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 0.3rem;
+            width: 60%;
+            flex-direction: row;
+            margin-top: 0;
+            margin-right: 5%;
         }
-
         #pagenav{
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            width: 100%;
-            height: 6.25rem;
-            font-size: 0.8rem;
+            flex-direction: row;
+            width: 50%;
+            height: 100%;
+            font-size: 1rem;
         }
         #pagenav a{
-            font-weight: 500;
-            color: var(--blackcolor);
+            font-weight: 400;
+            color: var(--textcolor);
+        }
+        #appnav{
+            width: 20%;
+            height: 100%;
+            margin-top: 0;
         }
 
-        #appnav{
-            width: 100%;
-            height: auto;
-            margin-top: 0.75rem;
-        }
         #appnavlist{
-            width: 100%;
-            height: auto;
-            justify-content: space-evenly;
-            align-items: center;
+            width: 70%;
+            height: 100%;
         }
+
         .navimages{
-            display: block;
-            width: 22px;
-            height: 22px;
+            display: inline;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    main{
+        height: 32rem;
+        justify-content: space-evenly;
+
+        #whoami{
+            width: 30%;
+            height: 100%;
+            margin-left: 0;
+            font-size: 3rem;
+            justify-content: end;
+        }
+        #whoami h1{
+            font-weight: 400;
+            line-height: normal;
+            color: var(--darkbluecolor);
+        }
+        #whoami .greeting{
+            font-weight: 700;
+        }
+        #profilbild{
+            width: 30%;
+            height: 105%;
+            margin-left: 0;
+            margin-top: 0;
+            justify-content: center;
+            align-items: end;
+        }
+        #profilepicture{
+            width: 18rem;
+            height: auto;
+            border-width: 8px;
+            object-fit: fill;
         }
     }
 
     main#homepage{
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        height: auto;
-        padding-top: 6rem;
-        padding-bottom: 6rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-grow: 0;
+    height: 32rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
 
-        #whoami{
-            width: 90%;
-            height: auto;
-            margin-left: 1.2rem;
-            justify-content: flex-start;
-            font-size: 1.15rem;
-        }
-        #whoami h1{
-            font-weight: 600;
-            line-height: 1.25;
-            color: var(--darkcolor);
-        }
-        #whoami .greeting{
-            font-weight: 600;
-        }
+    footer{
+        height: 5rem;
+        font-size: 1rem;
+        text-align: start;
 
-        #profilbild{
-            width: 90%;
-            height: auto;
-            margin-left: 1.2rem;
-            margin-top: 0.8rem;
-            justify-content: flex-start;
-            align-items: flex-start;
-        }
-        #profilepicture{
-            width: 10rem;
-            height: 10rem;
-            border-width: 4px;
-            object-fit: cover;
+        span{
+            padding: 0.5rem;
         }
     }
 
+
     #aboutmepage{
-        padding-bottom: 2rem;
+        padding-bottom: 0;
 
         .firstsectionaboutme{
-            margin-left: 1.2rem;
-            margin-top: 2rem;
-            width: 90%;
-            height: auto;
+            margin-left: 17rem;
+            width: 40%;
+            height: 33%;
+            margin-top: 3rem;
 
             .aboutmetitle{
-                font-size: 1.8rem;
-                margin-bottom: 1rem;
+                font-size: 42px;
+                margin-bottom: 2rem;
             }
             .aboutmetext{
-                font-size: 1rem;
-                width: 100%;
-                height: auto;
+                font-size: 1.2rem;
+                width: 708px;
+                height: 104px;
             }
         }
 
         .experiencesection{
-            width: 100%;
-            height: auto;
+            width: 80%;
+            height: 40%;
         }
         .experiencetitle{
-            width: 100%;
-            height: auto;
-            margin-bottom: 0.5rem;
+            height: 50%;
+            margin-bottom: 0;
         }
         .experiencename{
-            width: 65%;
-            font-size: 1.1rem;
+            width: auto;
+            font-size: 1.5rem;
         }
 
         .experienceinfo{
-            width: 100%;
-            height: auto;
+            height: 50%;
         }
         .experienceinfochild1{
-            flex-direction: column;
-            width: 100%;
-            height: auto;
+            flex-direction: row;
+            width: 60%;
+            height: 100%;
         }
         .experienceinfochild2{
-            justify-content: flex-end;
-            width: 100%;
-            height: auto;
-            margin-top: 0;
+            justify-content: end;
+            width: 40%;
+            height: 100%;
         }
         .experienceinfoheader{
-            font-size: 0.8rem;
+            font-size: 0.83rem;
         }
     }
 
     #TechStack{
-        height: auto;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        height: 50rem;
+        justify-content: space-evenly;
+        padding-top: 0;
+        padding-bottom: 0;
 
         #mytechstack{
-            width: 90%;
-            height: auto;
-            margin-left: 1.2rem;
-            align-self: flex-start;
+            width: 75%;
+            height: 20%;
+            margin-left: 0;
+            align-self: center;
         }
         .aboutmetitle{
-            font-size: 1.8rem;
-            margin-bottom: 1rem;
+            font-size: 42px;
+            margin-bottom: 2rem;
         }
         .aboutmetext{
-            font-size: 1rem;
-            width: 100%;
-            height: auto;
+            font-size: 1.2rem;
+            width: 708px;
+            height: 104px;
         }
-
         .techstack{
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-self: flex-start;
-            width: 90%;
-            height: auto;
-            margin-left: 1.2rem;
-            margin-top: 1rem;
+            width: 80%;
+            height: 10%;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            align-self: center;
+            margin-left: 0;
+            margin-top: 0;
 
             .techcontainer{
-                width: 25%;
-                height: auto;
-                margin-bottom: 1rem;
+                width: 10%;
+                height: 2rem;
+                margin-bottom: 0;
             }
             .techstackicons{
-                width: 3rem;
-                height: 3rem;
-                object-fit: contain;
+                width: auto;
+                height: auto;
+                object-fit: fill;
             }
             .techstacktext{
-                font-size: 0.75rem;
-                margin-bottom: 0.5rem;
-                text-align: center;
+                font-size: 0.8rem;
+                margin-bottom: 1rem;
+                text-align: start;
             }
         }
     }
 
     .pagetitle{
-        font-size: 1.8rem;
-        margin-top: 2rem;
-        margin-left: 1.2rem;
+        font-size: 2rem;
+        margin-top: 0;
+        margin-left: 15rem;
     }
     .titleparagraph{
-        width: 90%;
-        height: auto;
-        margin-left: 1.2rem;
+        width: 708px;
+        height: 104px;
+        margin-left: 15rem;
     }
 
     #projectpage{
-        padding-bottom: 2rem;
+        padding-bottom: 0;
 
         .projectpage{
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
             width: 100%;
-            height: auto;
+            height: 30rem;
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
         }
         #secondsecion{
-            margin-top: 0;
+            margin-top: 2rem;
         }
         .projectcontainer{
-            width: 90%;
-            height: auto;
-            margin-left: 1.2rem;
-            margin-top: 1.5rem;
-            box-shadow: 0.5rem 0.5rem 2rem 0 var(--shadowcolor);
+            width: 20%;
+            height: 100%;
+            box-shadow: 2rem 1rem 10rem 2rem var(--shadowcolor);
+            margin-left: 3rem;
+            margin-top: 0;
         }
         .projectimage{
-            width: 100%;
-            height: 12rem;
-            object-fit: cover;
-            border-top-left-radius: 25px;
-            border-top-right-radius: 25px;
+            height: 45%;
+            object-fit: fill;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
         }
         .projectinfo{
-            align-items: flex-start;
-            width: 90%;
-            height: auto;
-            padding-bottom: 1.2rem;
+            height: 65%;
+            align-items: center;
+            padding-bottom: 0;
         }
         .projectinfotitle{
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
         .projectinfoparagraph{
-            margin-top: 0.6rem;
-            width: 100%;
-            height: auto;
-            font-size: 0.9rem;
+            margin-top: 1rem;
+            width: 264px;
+            height: 130px;
+            font-size: 1rem;
         }
         .projectinfotechstack{
-            margin-top: 0.6rem;
+            margin-top: 0.2rem;
         }
         .linkcontainer{
-            height: auto;
-            margin-top: 1rem;
+            height: 10%;
+            margin-top: 0.5rem;
         }
-        .linkone, .linktwo{
+
+        .linkone , .linktwo{
+            height: 100%;
+        }
+        .linkone{
+            justify-content: center;
+        }
+        .linktwo{
             justify-content: flex-start;
-            height: auto;
         }
     }
 
     .contactpage{
-        padding-bottom: 2rem;
+        padding-bottom: 0;
 
         #contactheader{
-            font-size: 1rem;
+            font-size: 4rem;
         }
         #name{
-            font-size: 1rem;
+            font-size: 4rem;
         }
         #phonenummber{
-            display: block;
-            font-size: 1rem;
+            display: none;
         }
         #or{
-            display: block;
-            font-size: 0.9rem;
-            color: var(--textcolor);
-        }
-    }
-
-    footer{
-        height: auto;
-        font-size: 0.75rem;
-        text-align: center;
-
-        span{
-            padding: 0.2rem;
+            display: none;
         }
     }
 }
