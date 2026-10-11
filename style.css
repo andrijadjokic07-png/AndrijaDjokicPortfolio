@@ -508,21 +508,21 @@ footer{
     padding-bottom: 2rem;
 
     #contactheader{
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: var(--darkpurplecolor);
     }
     #name{
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 700;
     }
     #phonenummber{
         display: block;
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 700;
     }
     #or{
         display: block;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         color: var(--textcolor);
     }
 }
@@ -595,17 +595,18 @@ footer{
             width: 30%;
             height: 100%;
             margin-left: 0;
-            font-size: 3rem;
             justify-content: end;
         }
-        #whoami h1{
-            font-weight: 400;
+        #whoami h1 span{
+            font-size: 2.5rem;
+            font-weight: 700;
             line-height: normal;
-            color: var(--darkbluecolor);
+            color: var(--headingcolor);
         }
-        #whoami .greeting{
+        #whoami .greeting {
             font-weight: 700;
         }
+
         #profilbild{
             width: 30%;
             height: 105%;
@@ -655,6 +656,7 @@ footer{
             .aboutmetitle{
                 font-size: 42px;
                 margin-bottom: 2rem;
+                color: var(--headingcolor);
             }
             .aboutmetext{
                 font-size: 1.2rem;
@@ -709,6 +711,7 @@ footer{
         .aboutmetitle{
             font-size: 42px;
             margin-bottom: 2rem;
+            color: var(--headingcolor);
         }
         .aboutmetext{
             font-size: 1.2rem;
@@ -762,6 +765,9 @@ footer{
             flex-direction: row;
             justify-content: center;
             align-items: stretch;
+        }
+        .pagetitle{
+            color: var(--headingcolor);
         }
         #secondsecion{
             margin-top: 2rem;
@@ -817,6 +823,7 @@ footer{
 
         #contactheader{
             font-size: 4rem;
+            color: var(--darkpurplecolor);
         }
         #name{
             font-size: 4rem;
